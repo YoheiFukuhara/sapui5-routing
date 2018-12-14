@@ -1,0 +1,12 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="test.routing-sample.controller.ViewFrom" displayBlock="true">
+	<App id="idAppControl">
+		<pages>
+			<Page title="View From">
+				<content>
+				    <Button text="Go to next view" press="onPress"/>
+				    <Button text="Go to next view with parameter" press="onPressWithParameter"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
