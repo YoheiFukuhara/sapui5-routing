@@ -29,7 +29,10 @@
 			"tablet": true,
 			"phone": true
 		},
-		"supportedThemes": ["sap_hcb", "sap_belize"]
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_belize"
+		]
 	},
 	"sap.ui5": {
 		"rootView": {
@@ -57,9 +60,11 @@
 			}
 		},
 		"resources": {
-			"css": [{
-				"uri": "css/style.css"
-			}]
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
 		},
 		"routing": {
 			"config": {
@@ -74,23 +79,33 @@
 					"target": []
 				}
 			},
-			"routes": [{
-				"name": "TargetViewFrom",
-				"pattern": "RouteViewFrom",
-				"target": ["TargetViewFrom"]
-			}, {
-				"name": "TargetViewTo",
-				"pattern": "RouteViewTo",
-				"titleTarget": "",
-				"greedy": false,
-				"target": ["TargetViewTo"]
-			}, {
-				"name": "TargetViewToParameter",
-				"pattern": "RouteViewTo/{parameter}",
-				"titleTarget": "",
-				"greedy": false,
-				"target": ["TargetViewToParameter"]
-			}],
+			"routes": [
+				{
+					"name": "TargetViewFrom",
+					"pattern": "RouteViewFrom",
+					"target": [
+						"TargetViewFrom"
+					]
+				},
+				{
+					"name": "TargetViewTo",
+					"pattern": "RouteViewTo",
+					"titleTarget": "",
+					"greedy": false,
+					"target": [
+						"TargetViewTo"
+					]
+				},
+				{
+					"name": "TargetViewToParameter",
+					"pattern": "RouteViewTo/{parameter}",
+					"titleTarget": "",
+					"greedy": false,
+					"target": [
+						"TargetViewToParameter"
+					]
+				}
+			],
 			"targets": {
 				"TargetViewFrom": {
 					"viewType": "XML",
@@ -110,5 +125,9 @@
 				}
 			}
 		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.1.0"
 	}
 }
